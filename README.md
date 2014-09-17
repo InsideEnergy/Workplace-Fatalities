@@ -34,8 +34,8 @@ We wrote Python code that queries the BLS API for all states for NAICS codes 211
 
 #### Step 2: Download CBP employment data for 2011 and 2012
 Download:
-* [2011](ftp://ftp.census.gov/econ2011/CBP_CSV/cbp11st.zip) and [2012](https://www.census.gov/econ/cbp/download/) state data as zip files (add links)
-* [2011](ftp://ftp.census.gov/econ2011/CBP_CSV/cbp11us.zip) and [2012](ftp://ftp.census.gov/econ2012/CBP_CSV/cbp12us.zip) U.S. data as zip files
+* [2011](https://www.census.gov/econ/cbp/download/11_data/) and [2012](https://www.census.gov/econ/cbp/download/) state data as zip files
+* [2011](https://www.census.gov/econ/cbp/download/11_data/) and [2012](https://www.census.gov/econ/cbp/download/) U.S. data as zip files
 
 Once you've downloaded the files, filter out the relevant NAICS codes (variable "NAICS") and ownership categories (variable "LFO" is "-" for "All establishments"). We did this in Excel, but you can do it in whatever data-wrangling tool you like best.
 The data identifies states by FIPS code, so you'll also need to convert it to a state name. You can do this using our lookup table (master_geo_lookup.csv). We did this in Google Fusion Tables, but you can do it in Access, MySQL, or whatever database tool you prefer.
@@ -64,4 +64,4 @@ Because we are working with rates, very small numbers can throw off the analysis
 Our final analysis is in State_Fatality_Rates_CALCULATED.csv, which has a table structure: 
 Geography, All Mining Fatalities (2011 and 2012), All Mining Workers (Average of 2011 and 2012), Oil and Gas Workers (Average of 2011 and 2012), Active Rotary Rig Count (Average of 2011 and 2012), One-Year Average (2012 and 2012) Mining Fatalities per 100,000 workers, One-Year Average (2011 and 2012) Oil and Gas Fatalities per 100,000 workers, One Year Average Oil and Gas Fatalities per 100 Rigs
 
-You can also view it at a Google spreadsheet here.
+[You can also view it at a Google spreadsheet here.](https://docs.google.com/spreadsheets/d/1k8vC0k3FgFwaPDBfWdIjhlWh3z8Rb3PzQC66F1sj78E/edit?usp=sharing)
